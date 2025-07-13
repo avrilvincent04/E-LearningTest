@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="elearning.css">
+    <title>E-Learning Platform</title>
+    </head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <h1 class="logo">E-Learning</h1>
+        </div>
+        <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-item" id="nav-item">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Roadmap</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Tips</a></li>
+                <li><a href="#">Quizzes</a></li>
+            </ul>
+            <div class="contact">
+                <button>Contact</button>
+            </div>
+            <div class="sign-up">
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Header Section-->
+    <section class="header-section">
+        <div class="header">Your Step-by-Step Guide to Smarter IT Skill Building</div>
+        <div class="sub-header">Learn faster with curated tools, guided roadmaps, beginner-friendly resources, and step-by-step support for every IT learner.</div>
+        <div class="header-buttons">
+            <a href="#" class="roadmap-btn">Start your Roadmap</a>
+            <a href="#" class="resources-btn">View Resources</a>
+        </div>
+    </section>
+    
+    <!--Roadmap Section-->
+    <section class="roadmap-page">
+        <div class="roadmap-header">Programming Career Roadmap</div>
+        <div class="roadmap-subheader">Build a Solid Coding Foundation and Advance Towards Specialized Developer Roles</div>
+
+        <!--Beginner-->
+        <div class="level-box beginner-container">
+            <div class="level-header">
+                <h1>1. Beginner Level</h1>
+                <h2>Learn the fundamentals of programming</h2>
+            </div>
+            <div class="level-contents">
+                <div class="content-item">
+                    <div class="title">1. What is Programming?</div>
+                    <div class="title-description">→ Learn the basics of what programming is, why it's important, and how it helps solve problems using computers.</div>
+                </div>
+                <div class="content-item">
+                    <div class="title">2. Understanding Logic and Algorithms</div>
+                    <div class="title-description">→ Get familiar with the logical thinking behind programming—step-by-step instructions (algorithms) to solve problems.</div>
+                </div>
+                <div class="content-item">
+                    <div class="title">3. Learn a Language (Python Recommended)</div>
+                    <div class="title-description">→ Start learning your first programming language. Python is beginner-friendly and widely used in many fields.</div>
+                </div>
+                <div class="content-item">
+                    <div class="title">4. Variables, Data Types, Loops, Conditionals</div>
+                    <div class="title-description">→ Understand the core building blocks of code: how to store data, make decisions, and repeat actions.</div>
+                </div>
+                <div class="content-item">
+                    <div class="title">5. Simple CLI Projects</div>
+                    <div class="title-description">→ Apply your knowledge by building small command-line interface (CLI) projects like a calculator, to-do list, or number guessing game.</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Intermediate-->
+        <div class="level-box intermediate-container">
+            <div class="level-header">
+                <h1>2. Intermediate Level</h1>
+                <h2>Expand your programming knowledge</h2>
+            </div>
+            <div class="level-contents">
+                <div class="content-item">
+                    <div class="title">6. Object-Oriented Programming (OOP)</div>
+                    <div class="title-description">→ Learn how to structure your code using objects and classes for better organization and reuse.</div>
+                </div>
+                <div class="content-item">
+                    <div class="title">7. Data Structures (Lists, Dictionaries, Trees)</div>
+                    <div class="title-description">→ Understand how to organize and store data efficiently using common structures like arrays, dictionaries, and trees.</div>
+                </div>
+                <div class="content-item">
+                    <div class="title">8. Debugging</div>
+                    <div class="title-description">→ Understand how to identify and fix bugs in your code using techniques like print statements, breakpoints, and debugging tools in code editors.</div>
+                </div>
+                <div class="content-item">
+                    <div class="title">9. Version Control (Git)</div>
+                    <div class="title-description">→ Learn how to track and manage changes in your code using Git. Understand commits, branches, merges, and using GitHub for collaboration.</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Advanced-->
+        <div class="level-box advanced-container">
+            <div class="level-header">
+                <h1>3. Advanced Level</h1>
+                <h2>Master complex programming concepts</h2>
+            </div>
+            <div class="level-contents">
+                <div class="content-item">
+                    <div class="title">10. Design Patterns</div>
+                    <div class="title-description">→ Discover reusable solutions to common software design problems. Learn patterns like Singleton, Factory, and Observer to write cleaner, scalable code.</div>
+                </div>
+                <div class="content-item">
+                    <div class="title">11. Algorithms</div>
+                    <div class="title-description">→ Dive deeper into algorithmic concepts such as recursion, sorting, searching, dynamic programming, and graph traversal to improve your problem-solving efficiency.</div>
+                </div>
+                <div class="content-item">
+                    <div class="title">12. Problem-Solving Platforms (LeetCode, HackerRank)</div>
+                    <div class="title-description">→ Practice your coding skills on platforms like LeetCode and HackerRank. These help you apply algorithm knowledge to real-world and interview-style problems.</div>
+                </div>
+                <div class="content-item">
+                    <div class="title">13. Working with APIs</div>
+                    <div class="title-description">→ Learn how to make your programs interact with other services using APIs (Application Programming Interfaces). Build apps that fetch or send data online.</div>
+                </div>
+            </div>
+        </div>
+        <div class="viewall-roadmap">
+            <a href="#" class="viewallroadmap-btn">View more Roadmap</a>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources-section">
+        <div class="resources-container">
+            <div class="resources-header">
+                <h4>Popular <span>free</span> online Resources</h4>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <img src="javascript-card-img.jpg" alt="JavaScript Learning">
+                    <h3>Learn JavaScript</h3>
+                    <p>Master the fundamentals of JavaScript with interactive coding exercises and real-world projects.</p>
+                    <p class="tags">#WebDevelopment #Frontend #JavaScript</p>
+                    <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" class="card-link" target="_blank">
+                        View Resources
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <img src="python-card-img.jpg" alt="Python Learning">
+                    <h3>Python Fundamentals</h3>
+                    <p>Learn Python programming basics and explore its applications in data science and automation.</p>
+                    <p class="tags">#Python #PythonDev #Beginner</p>
+                    <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/" class="card-link" target="_blank">
+                        View Resources
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <img src="networking-card-img.jpg" alt="Networking Basics">
+                    <h3>Networking Basics</h3>
+                    <p>Understand computer networks, protocols, and infrastructure essential for IT professionals.</p>
+                    <p class="tags">#Networking #ITFundamentals #Tech</p>
+                    <a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/entry/ccna.html" class="card-link" target="_blank">
+                        View Resources
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="viewall-resources">
+            <a href="#" class="viewallresources-btn">View more Resources</a>
+        </div>
+    </section>
+
+    <!--Tips Section-->
+    <section class="tips-section">
+        <div class="tips-container">
+            <div class="tips-header">
+                <h4>Learn smarter with simple tech tips for beginners</h4>
+            </div>
+
+            <div class="tips-card-container">
+                <div class="tips-card">
+                    <h1>Web Development</h1>
+                    <h4>Learn the core building blocks of websites: HTML, CSS, and JavaScript. These are essential for anyone starting out in tech.</h4>
+                    <ul>
+                        <li>→ Start with HTML to structure your content</li>
+                        <li>→ Use CSS to style and layout your pages</li>
+                        <li>→ Add JavaScript for interactive features</li>
+                        <li>→ Practice with small projects daily</li>
+                        <li>→ Learn responsive design principles</li>
+                    </ul>
+                </div>
+                <div class="tips-card">
+                    <h1>Full Stack Development</h1>
+                    <h4>Combine frontend and backend knowledge to build complete web apps. Full stack developers handle it all.</h4>
+                    <ul>
+                        <li>→ Understand how frontend talks to backend using APIs</li>
+                        <li>→ Pick one stack (like MERN) and stick with it first</li>
+                        <li>→ Structure your projects into routes, models, views</li>
+                        <li>→ Deploy your projects to share your work</li>
+                        <li>→ Learn authentication and data flow</li>
+                    </ul>
+                </div>
+                <div class="tips-card">
+                    <h1>Networking</h1>
+                    <h4>Understanding how computers connect, communicate, and transfer data is crucial in tech — even for developers.</h4>
+                    <ul>
+                        <li>→ Learn IPs, DNS, and how the web works</li>
+                        <li>→ Understand protocols like HTTP, TCP/IP, and FTP</li>
+                        <li>→ Use tools like Wireshark or Packet Tracer</li>
+                        <li>→ Learn the basics of firewalls and port numbers</li>
+                        <li>→ Understand subnets and network structure</li>
+                    </ul>
+                </div>
+                <div class="tips-card">
+                    <h1>Tech Study Tips</h1>
+                    <h4>Good study habits and mindset are just as important as technical skills. Stay consistent and keep building.</h4>
+                    <ul>
+                        <li>→ Don't aim for perfection — aim for progress</li>
+                        <li>→ Use GitHub to document and store your work</li>
+                        <li>→ Ask questions and join coding communities</li>
+                        <li>→ Learn to read documentation early on</li>
+                        <li>→ Stay curious and build real-world projects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="viewall-tips">
+            <a href="#" class="viewalltips-btn">View more Tips</a>
+        </div>
+    </section>
+
+    <!--Quiz Section-->
+   <section class="quiz-section">
+        <h2>🧠 Quizzes by Topic</h2>
+
+        <div class="quiz-grid">
+            <!-- 1 -->
+            <div class="quiz-card">
+            <h3>🌐 Web Development</h3>
+            <p class="quiz-desc">Test your knowledge in HTML, CSS, and JavaScript — the core of every website.</p>
+            <div class="quiz-links">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JavaScript</a>
+            </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="quiz-card">
+            <h3>🧩 Full Stack</h3>
+            <p class="quiz-desc">Practice frontend + backend topics like APIs, servers, and deployment basics.</p>
+            <div class="quiz-links">
+                <a href="#">MERN</a>
+                <a href="#">API</a>
+                <a href="#">Deployment</a>
+            </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="quiz-card">
+            <h3>🔌 Networking</h3>
+            <p class="quiz-desc">Understand how the internet works — IPs, DNS, protocols, and tools.</p>
+            <div class="quiz-links">
+                <a href="#">IP & DNS</a>
+                <a href="#">Protocols</a>
+                <a href="#">Tools</a>
+            </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="quiz-card">
+            <h3>🛡 Cybersecurity</h3>
+            <p class="quiz-desc">Get familiar with threats, encryption, and firewalls.</p>
+            <div class="quiz-links">
+                <a href="#">Threats</a>
+                <a href="#">Encryption</a>
+                <a href="#">Firewalls</a>
+            </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="quiz-card">
+            <h3>💾 Databases</h3>
+            <p class="quiz-desc">Explore SQL, ER models, and normalization techniques.</p>
+            <div class="quiz-links">
+                <a href="#">SQL</a>
+                <a href="#">ERD</a>
+                <a href="#">Normalization</a>
+            </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="quiz-card">
+            <h3>🤖 AI & ML</h3>
+            <p class="quiz-desc">Quiz yourself on algorithms, data, and model training.</p>
+            <div class="quiz-links">
+                <a href="#">AI Basics</a>
+                <a href="#">ML Models</a>
+                <a href="#">Data Prep</a>
+            </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="quiz-card">
+            <h3>📱 Mobile Dev</h3>
+            <p class="quiz-desc">Learn the essentials of Android, iOS, and cross-platform tools.</p>
+            <div class="quiz-links">
+                <a href="#">Android</a>
+                <a href="#">iOS</a>
+                <a href="#">Flutter</a>
+            </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="quiz-card">
+            <h3>🛠 DevOps</h3>
+            <p class="quiz-desc">Understand CI/CD, containers, and automation pipelines.</p>
+            <div class="quiz-links">
+                <a href="#">Docker</a>
+                <a href="#">Kubernetes</a>
+                <a href="#">CI/CD</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="viewall-quiz">
+        <a href="#all-quizzes" class="viewallquiz-btn">View All Quiz</a>
+        </div>
+    </section>
+
+    
+    
+
+    
+
+
+
+
+
+
+
+
+    <script src="elearning.js"></script>
+</body>
+</html>

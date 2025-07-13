@@ -1,0 +1,685 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #1a237e;
+            color: #e8eaf6;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-item ul li a {
+            color: #e8eaf6;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-item ul li a:hover {
+            color: #ffffff;
+        }
+
+        .nav-item ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ffffff;
+            transition: width 0.3s ease;
+        }
+
+        .nav-item ul li a:hover::after {
+            width: 100%;
+        }
+
+        .contact, .sign-up {
+            margin-left: 2rem;
+        }
+
+        .contact button, .sign-up button {
+            background-color: transparent;
+            border: 1px solid #e8eaf6;
+            color: #e8eaf6;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .contact button:hover, .sign-up button:hover {
+            background-color: #303f9f;
+            border-color: #303f9f;
+        }
+
+        .sign-up button {
+            background-color: #3949ab;
+            border-color: #3949ab;
+        }
+
+        .sign-up button:hover {
+            background-color: #4456c9;
+        }
+
+        /* Mobile Menu Styles */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        /* Header Section Styles */
+        .header-section {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 3rem 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #f8f9ff 0%, #eef1ff 100%);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .header-section:hover{
+             transform: translateY(-5px);
+        }
+        
+        .header {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a237e;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        
+        .sub-header {
+            font-size: 1.2rem;
+            color: #5c6bc0;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .header-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .roadmap-btn {
+            background-color: #3949ab;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .roadmap-btn:hover {
+            background-color: #303f9f;
+            transform: translateY(-5px);
+        }
+        
+        .resources-btn {
+            background-color: transparent;
+            color: #3949ab;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            border: 1px solid #3949ab;
+            transition: all 0.3s ease;
+        }
+        
+        .resources-btn:hover {
+            background-color: #e8eaf6;
+            transform: translateY(-5px);
+        }
+
+        /* Roadmap Section Styles */
+        .roadmap-page {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .roadmap-header {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a237e;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .roadmap-subheader {
+            font-size: 1.1rem;
+            color: #5c6bc0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .level-box {
+            background-color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .level-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .beginner-container {
+            border-left: 5px solid #4CAF50;
+             border-right: 5px solid #2196F3;
+        }
+
+        .intermediate-container {
+            border-left: 5px solid #2196F3;
+            border-right: 5px solid #9C27B0;
+        }
+
+        .advanced-container {
+            border-left: 5px solid #9C27B0;
+             border-right: 5px solid #4CAF50;
+        }
+
+        .level-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .level-header h1 {
+            font-size: 1.5rem;
+            color: #1a237e;
+            margin-bottom: 0.5rem;
+        }
+
+        .level-header h2 {
+            font-size: 1.1rem;
+            color: #5c6bc0;
+            font-weight: 400;
+        }
+
+        .content-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .content-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .content-item .title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a237e;
+            margin-bottom: 0.5rem;
+        }
+
+        .content-item .title-description {
+            font-size: 1rem;
+            color: #616161;
+            line-height: 1.5;
+        }
+        
+       .viewall-roadmap {
+        display: flex;
+        justify-content: center;
+        background-color: #3949ab;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        width: fit-content;
+        margin: 0 auto;
+         transition: all 0.3s ease;
+        }
+        .viewall-roadmap:hover{
+        transform: translateY(-5px);
+        }
+        .viewallroadmap-btn {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;  
+        }
+
+        /* Resources Section Styles */
+        .resources-section {
+            background-color:   #e8eaf6;
+            padding: 3rem 0;
+        }
+
+        .resources-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .resources-header {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a237e;
+            margin-bottom: 2rem;
+        }
+
+        .resources-header span {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            flex: 1 1 30%;
+            min-width: 250px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background-color: #f0f0f0;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            color: #1a237e;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .card .tags {
+            font-size: 0.8rem;
+            color: #3949ab;
+            font-weight: 500;
+        }
+        
+        .card-link {
+            display: inline-block;
+            background-color: #1a237e;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .card-link:hover {
+            background-color: #303f9f;
+            transform: translateY(-2px);
+        }
+
+        .viewall-resources {
+            display: flex;
+            justify-content: center;
+            background-color: #3949ab;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            width: fit-content;
+            margin: 2rem auto 0;
+            transition: all 0.3s ease;
+        }
+
+        .viewall-resources:hover {
+            transform: translateY(-5px);
+        }
+
+        .viewallresources-btn {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        /*Tips Section*/
+        .tips-section {
+            background-color: #f5f7fa;
+            padding: 3rem 0;
+        }
+
+        .tips-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .tips-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .tips-header h4 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a237e;
+        }
+
+        .tips-card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .tips-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            flex: 1 1 22%;
+            min-width: 250px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .tips-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tips-card h1 {
+            font-size: 1.3rem;
+            color: #1a237e;
+            margin-bottom: 1rem;
+        }
+
+        .tips-card h4 {
+            font-size: 1rem;
+            color: #5c6bc0;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .tips-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tips-card ul li {
+            color: #616161;
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .viewall-tips {
+            display: flex;
+            justify-content: center;
+            background-color: #3949ab;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            width: fit-content;
+            margin: 2rem auto 0;
+            transition: all 0.3s ease;
+        }
+
+        .viewall-tips:hover {
+            transform: translateY(-5px);
+        }
+
+        .viewalltips-btn {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+
+/*Quiz sectionn */
+        .quiz-section {
+        padding: 2rem;
+        font-family: 'Segoe UI', sans-serif;
+        background-color:  #e8eaf6;
+        text-align: center;
+        }
+
+        .quiz-section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #1f2937;
+        }
+
+        .quiz-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+        gap: 1.5rem;
+        }
+
+        .quiz-card {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+        padding: 1.5rem;
+        text-align: left;
+        transition: transform 0.3s ease;
+        }
+        .quiz-card:hover{
+            transform: translateY(-5px);
+        }
+
+        .quiz-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: #111827;
+        }
+
+        .quiz-desc {
+        margin-bottom: 1rem;
+        }
+
+        .quiz-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        }
+
+        .quiz-links a {
+        background-color: #e0e7ff;
+        color: #3b82f6;
+        padding: 0.4rem 0.8rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.95rem;
+
+        transition: transform 0.3s ease;
+        }
+
+        .quiz-links a:hover {
+         transform: translateY(-5px);
+        background-color: #c7d2fe;
+        }
+
+        .viewall-quiz {
+        display: flex;
+        justify-content: center;
+        background-color: #3949ab;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        width: fit-content;
+        margin: 2rem auto 0;
+        transition: all 0.3s ease;
+        }
+
+        .viewall-quiz:hover {
+        transform: translateY(-5px);
+        }
+
+        .viewallquiz-btn {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        }
+
+
+
+
+
+
+        
+
+
+
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+                position: relative;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-item {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #1a237e;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                transform: translateY(-150%);
+                transition: transform 0.3s ease;
+                z-index: 100;
+            }
+
+            .nav-item.active {
+                transform: translateY(0);
+            }
+
+            .nav-item ul {
+                flex-direction: column;
+                width: 100%;
+                gap: 1rem;
+            }
+
+            .contact, .sign-up {
+                margin: 1rem 0 0 0;
+                width: 100%;
+            }
+
+            .contact button, .sign-up button {
+                width: 100%;
+            }
+
+            .header {
+                font-size: 1.8rem;
+            }
+
+            .sub-header {
+                font-size: 1rem;
+            }
+
+            .roadmap-header {
+                font-size: 1.5rem;
+            }
+
+            .level-box {
+                padding: 1.5rem;
+            }
+            
+            .card-container {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .card {
+                flex: 1 1 100%;
+            }
+
+            .tips-card-container {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .tips-card {
+                flex: 1 1 100%;
+            }
+        }
